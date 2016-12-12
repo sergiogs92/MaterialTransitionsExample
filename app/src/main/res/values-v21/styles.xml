@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme"  parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/slide_rigth_not_shared_activities</item>
+        <item name="android:windowExitTransition">@transition/slide_rigth_not_shared_activities</item>
+        <item name="android:windowSharedElementEnterTransition">@transition/move_shared_activities</item>
+        <item name="android:windowSharedElementExitTransition">@transition/move_shared_activities</item>
+    </style>
+</resources>

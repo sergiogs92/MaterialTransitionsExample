@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/activity_main_transition_fragments_button"
+        android:layout_width="@dimen/width_button_select_transition"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_button"
+        android:text="@string/material_transitions_between_fragments"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/activity_main_transition_activities_button"
+        android:layout_width="@dimen/width_button_select_transition"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_transition_fragments_button"
+        android:layout_marginTop="@dimen/margin_top_transition_button"
+        android:background="@drawable/gradient_button"
+        android:text="@string/material_transitions_between_activities"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/activity_main_transition_targets_activities_button"
+        android:layout_width="@dimen/width_button_select_transition"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_transition_activities_button"
+        android:layout_marginTop="@dimen/margin_top_transition_button"
+        android:background="@drawable/gradient_button"
+        android:text="@string/transition_targets"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

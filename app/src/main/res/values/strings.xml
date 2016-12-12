@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MaterialTransitions</string>
+    <string name="content_description">content_description</string>
+    <string name="medium_text">medium_text</string>
+    <string name="material_transitions_between_fragments">Material transitions between fragments</string>
+    <string name="material_transitions_between_activities">Material transitions between activities</string>
+    <string name="transition_photo">transitionPhoto</string>
+    <string name="transition_shield">transitionShield</string>
+    <string name="transition_name">transitionName</string>
+    <string name="cr7_name_player">Cristiano Ronaldo</string>
+    <string name="cr7_description_player">He is a Portuguese professional footballer who plays for Spanish club Real Madrid and the Portugal national team. He is a forward and serves as captain for Portugal. In 2008, he won his first Ballon d\'Or and FIFA World Player of the Year awards. He then won the FIFA Ballon d\'Or in 2013 and 2014. In 2015, Ronaldo scored his 500th senior career goal for club and country.</string>
+    <string name="leo_name_player">Lionel Messi</string>
+    <string name="leo_description_player">He is an Argentine professional footballer who plays as a forward for Spanish club FC Barcelona and captains the Argentina national team. Often considered the best player in the world and rated by many in the sport as the greatest of all time, Messi is the only football player in history to win five FIFA Ballons d\'Or, four of which he won consecutively, and the first player to win three European Golden Shoes</string>
+    <string name="alonso_name_pilot">Fernando Alonso</string>
+    <string name="alonso_description_pilot">He is a Spanish Formula One racing driver and a double World Champion who is currently racing for McLaren-Honda.</string>
+    <string name="hamilton_name_pilot">Lewis Hamilton</string>
+    <string name="hamilton_description_pilot">He is a British Formula One racing driver from England, currently racing for the Mercedes AMG Petronas team. He is the 2008, 2014 and 2015 Formula One World Champion.</string>
+    <string name="transition_targets">Transition targets</string>
+    <string name="transition_description">transitionDescription</string>
+    <string name="change_scenes">Change Scenes</string>
+    <string name="login">LOGIN</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="enter">Enter</string>
+</resources>

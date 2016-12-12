@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_detail_player_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/detail_player_fragment_shield_image_view"
+        android:layout_width="@dimen/width_shield_detail_imageview"
+        android:layout_height="@dimen/height_shield_detail_imageview"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:elevation="1dp"
+        android:contentDescription="@string/content_description"
+        android:transitionName="@string/transition_shield"
+        tools:ignore="ContentDescription,UnusedAttribute" />
+
+    <ImageView
+        android:id="@+id/detail_player_fragment_photo_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/detail_player_fragment_shield_image_view"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/content_description"
+        android:scaleType="centerCrop"
+        android:transitionName="@string/transition_photo"
+        tools:ignore="ContentDescription,UnusedAttribute" />
+
+
+    <TextView
+        android:id="@+id/detail_player_fragment_name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_player_fragment_photo_image_view"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:elevation="1dp"
+        android:transitionName="@string/transition_name"
+        tools:ignore="ContentDescription,UnusedAttribute" />
+
+
+    <ScrollView
+        android:id="@+id/detail_player_fragment_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/detail_player_fragment_name_text_view">
+
+        <TextView
+            android:id="@+id/detail_player_fragment_description_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+    </ScrollView>
+
+</RelativeLayout>

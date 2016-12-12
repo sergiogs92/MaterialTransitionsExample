@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="sequential">
+
+    <fade
+        android:duration="500"
+        android:fadingMode="fade_out">
+
+        <targets>
+            <target android:targetId="@id/tvTitleLogin" />
+        </targets>
+    </fade>
+
+    <fade
+        android:duration="500"
+        android:fadingMode="fade_out">
+
+        <targets>
+            <target android:targetId="@id/etNameLogin" />
+        </targets>
+    </fade>
+
+    <fade
+        android:duration="500"
+        android:fadingMode="fade_out">
+
+        <targets>
+            <target android:targetId="@id/etPasswordLogin" />
+        </targets>
+    </fade>
+
+    <fade
+        android:duration="500"
+        android:fadingMode="fade_out">
+
+        <targets>
+            <target android:targetId="@id/bLogin" />
+        </targets>
+    </fade>
+
+</transitionSet>

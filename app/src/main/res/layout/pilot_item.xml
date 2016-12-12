@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/pilot_item_photo_image_view"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/content_description"
+        android:scaleType="centerCrop"
+        android:background="@color/cardview_shadow_start_color"/>
+
+    <TextView
+        android:id="@+id/pilot_item_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pilot_item_photo_image_view"
+        android:layout_toEndOf="@+id/pilot_item_photo_image_view"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        tools:text="@string/alonso_name_pilot"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/pilot_item_body_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/pilot_item_photo_image_view"
+        android:layout_toEndOf="@+id/pilot_item_photo_image_view"
+        android:layout_below="@+id/pilot_item_name_text_view"
+        tools:text="@string/alonso_description_pilot"
+        android:maxLines="2"/>
+
+</RelativeLayout>

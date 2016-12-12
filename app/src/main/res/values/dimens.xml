@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="height_image_player">190dp</dimen>
+    <dimen name="width_button_select_transition">250dp</dimen>
+    <dimen name="margin_top_transition_button">20dp</dimen>
+    <dimen name="height_shield_list_imageview">50dp</dimen>
+    <dimen name="width_shield_list_imageview">50dp</dimen>
+    <dimen name="width_shield_detail_imageview">100dp</dimen>
+    <dimen name="height_shield_detail_imageview">100dp</dimen>
+</resources>

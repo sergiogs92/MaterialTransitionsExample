@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="750">
+    <changeBounds/>
+    <changeTransform />
+    <changeImageTransform />
+</transitionSet>
+
+    <!-- This transition is just a set of three transitions that will play together:
+- ChangeBounds animates the bounds (location and size) of the view.
+- ChangeTransform animates the scale of the view, including the parent.
+- ChangeImageTransform allows us to change the size (and/or scale type) of the image -->
