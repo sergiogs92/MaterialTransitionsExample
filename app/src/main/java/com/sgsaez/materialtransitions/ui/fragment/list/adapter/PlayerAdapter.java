@@ -28,24 +28,30 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.Holder> {
         mPlayerList = new ArrayList<>();
     }
 
-    public PlayerAdapter(OnPlayerClickListener mListener){
+    public PlayerAdapter(OnPlayerClickListener mListener) {
         this.mListener = mListener;
     }
 
-    public void setPlayerList(List<Player> playerList){
+    public void setPlayerList(List<Player> playerList) {
         this.mPlayerList = playerList;
     }
 
     @Override
     public Holder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from( parent.getContext() ).inflate(R.layout.player_item, null);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.player_item, null);
         Holder holder = new Holder(view);
         return holder;
     }
 
+    /*
+       It is important that each shared element in the source screen has a unique transition name.
+       For example, we can't just give all the images type "photo" in our recycler the transition
+       name "transitionPhoto" because then we would have conflicting transition names.
+     */
+
     @Override
     public void onBindViewHolder(Holder holder, int position) {
-        holder.bind( mPlayerList.get( position ), mListener);
+        holder.bind(mPlayerList.get(position), mListener);
         ViewCompat.setTransitionName(holder.getIvPhoto(), String.valueOf(position) + "_photo");
         ViewCompat.setTransitionName(holder.getIvShield(), String.valueOf(position) + "_shield");
         ViewCompat.setTransitionName(holder.getTvName(), String.valueOf(position) + "_name");
