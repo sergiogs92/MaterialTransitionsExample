@@ -19,8 +19,8 @@
         <activity android:name=".ui.fragment.PlayerActivity"/>
         <activity android:name=".ui.activity.pilot.list.PilotActivity"/>
         <activity android:name=".ui.activity.pilot.detail.PilotDetailActivity"/>
-        <activity android:name=".ui.activity.TransitionTargetActivity"/>
-
+        <activity android:name=".ui.activity.TransitionTargetActivity1"/>
+        <activity android:name=".ui.activity.TransitionTargetActivity2"/>
     </application>
 
 </manifest>

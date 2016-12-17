@@ -15,11 +15,14 @@
     <string name="alonso_description_pilot">He is a Spanish Formula One racing driver and a double World Champion who is currently racing for McLaren-Honda.</string>
     <string name="hamilton_name_pilot">Lewis Hamilton</string>
     <string name="hamilton_description_pilot">He is a British Formula One racing driver from England, currently racing for the Mercedes AMG Petronas team. He is the 2008, 2014 and 2015 Formula One World Champion.</string>
-    <string name="transition_targets">Transition targets</string>
+    <string name="transition_target_1">Transition between scenes 1</string>
+    <string name="transition_target_2">Transition between scenes 2</string>
     <string name="transition_description">transitionDescription</string>
     <string name="change_scenes">Change Scenes</string>
     <string name="login">LOGIN</string>
     <string name="name">Name</string>
     <string name="password">Password</string>
     <string name="enter">Enter</string>
+    <string name="title_winner">The winner is</string>
+    <string name="name_winner">Fernando Alonso</string>
 </resources>

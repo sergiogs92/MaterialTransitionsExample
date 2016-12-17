@@ -25,12 +25,22 @@
         android:textColor="@android:color/white" />
 
     <Button
-        android:id="@+id/activity_main_transition_targets_activities_button"
+        android:id="@+id/activity_main_transition_target_1_activities_button"
         android:layout_width="@dimen/width_button_select_transition"
         android:layout_height="wrap_content"
         android:layout_below="@+id/activity_main_transition_activities_button"
         android:layout_marginTop="@dimen/margin_top_transition_button"
         android:background="@drawable/gradient_button"
-        android:text="@string/transition_targets"
+        android:text="@string/transition_target_1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/activity_main_transition_target_2_activities_button"
+        android:layout_width="@dimen/width_button_select_transition"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_transition_target_1_activities_button"
+        android:layout_marginTop="@dimen/margin_top_transition_button"
+        android:background="@drawable/gradient_button"
+        android:text="@string/transition_target_2"
         android:textColor="@android:color/white" />
 </RelativeLayout>

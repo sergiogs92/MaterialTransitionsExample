@@ -13,12 +13,11 @@ import android.widget.Button;
 
 import com.sgsaez.materialtransitions.R;
 
-
 /**
- * Created by sergiogarcia on 7/12/16.
+ * Created by sergiogarcia on 17/12/16.
  */
 
-public class TransitionTargetActivity extends AppCompatActivity {
+public class TransitionTargetActivity2 extends AppCompatActivity {
 
     private Scene current;
     private Scene other;
@@ -30,25 +29,25 @@ public class TransitionTargetActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_transition_target);
+        setContentView(R.layout.activity_transition_target_2);
 
-        ViewGroup container = (ViewGroup) findViewById(R.id.container);
+        ViewGroup container = (ViewGroup) findViewById(R.id.container_scenes_2);
         bChangeScenes = (Button) findViewById(R.id.bChangeScenes);
         setUpButton();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 
             transitionScenetoSecond = TransitionInflater.from(this)
-                    .inflateTransition(R.transition.scene1_transition_scene2);
+                    .inflateTransition(R.transition.scene1_transition2_scene2);
 
             transitionScenetoFirst = TransitionInflater.from(this)
-                    .inflateTransition(R.transition.scene2_transition_scene1);
+                    .inflateTransition(R.transition.scene2_transition2_scene1);
 
             current = Scene.getSceneForLayout(container,
-                    R.layout.scene1,
+                    R.layout.scene2_1,
                     this);
             other = Scene.getSceneForLayout(container,
-                    R.layout.scene2,
+                    R.layout.scene2_2,
                     this);
             current.enter();
         }
@@ -72,4 +71,3 @@ public class TransitionTargetActivity extends AppCompatActivity {
         });
     }
 }
-

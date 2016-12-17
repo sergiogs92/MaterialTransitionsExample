@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="sequential">
+
+    <explode
+        android:duration="500">
+
+        <targets>
+            <target android:targetId="@id/tvTitleWinner" />
+            <target android:targetId="@id/tvNameWinner" />
+        </targets>
+    </explode>
+
+    <fade
+        android:duration="300"
+        android:fadingMode="fade_out">
+
+        <targets>
+            <target android:targetId="@id/ivAlonso" />
+        </targets>
+    </fade>
+
+    <changeBounds
+        android:duration="1000"
+        android:interpolator="@android:anim/linear_interpolator">
+
+        <targets>
+            <target android:targetId="@id/ivRosberg" />
+            <target android:targetId="@id/ivHamilton" />
+        </targets>
+
+    </changeBounds>
+</transitionSet>

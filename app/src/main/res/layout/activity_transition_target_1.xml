@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
-        android:id="@+id/container"
+        android:id="@+id/container_scenes_1"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:gravity="center"
