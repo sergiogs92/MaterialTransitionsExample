@@ -1,5 +1,6 @@
 package com.sgsaez.materialtransitions.ui.activity.pilot.list.adapter;
 
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -43,6 +44,7 @@ public class PilotAdapter extends RecyclerView.Adapter<PilotAdapter.Holder> {
     @Override
     public void onBindViewHolder(Holder holder, int position) {
         holder.bind(mPilotList.get(position),mListener);
+        ViewCompat.setTransitionName(holder.getIvPhoto(), String.valueOf(position) + "_photo");
     }
 
     @Override
