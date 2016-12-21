@@ -4,6 +4,15 @@
     android:transitionOrdering="sequential">
 
     <slide
+        android:duration="300"
+        android:slideEdge="left">
+
+        <targets>
+            <target android:targetId="@id/tvPodiumWinner" />
+        </targets>
+    </slide>
+
+    <slide
         android:duration="500"
         android:slideEdge="top">
 

@@ -25,4 +25,5 @@
     <string name="enter">Enter</string>
     <string name="title_winner">The winner is</string>
     <string name="name_winner">Fernando Alonso</string>
+    <string name="second_and_third_position">Second and Third Position</string>
 </resources>

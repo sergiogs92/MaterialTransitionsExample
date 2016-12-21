@@ -30,4 +30,13 @@
         </targets>
 
     </changeBounds>
+
+    <slide
+        android:duration="300"
+        android:slideEdge="right">
+
+        <targets>
+            <target android:targetId="@id/tvPodiumWinner" />
+        </targets>
+    </slide>
 </transitionSet>
