@@ -6,7 +6,8 @@
     <string name="material_transitions_between_activities">Material transitions between activities</string>
     <string name="transition_photo">transitionPhoto</string>
     <string name="transition_shield">transitionShield</string>
-    <string name="transition_name">transitionName</string>
+	<string name="transition_container">transitionContainer</string>
+	<string name="transition_name">transitionName</string>
     <string name="cr7_name_player">Cristiano Ronaldo</string>
     <string name="cr7_description_player">He is a Portuguese professional footballer who plays for Spanish club Real Madrid and the Portugal national team. He is a forward and serves as captain for Portugal. In 2008, he won his first Ballon d\'Or and FIFA World Player of the Year awards. He then won the FIFA Ballon d\'Or in 2013 and 2014. In 2015, Ronaldo scored his 500th senior career goal for club and country.</string>
     <string name="leo_name_player">Lionel Messi</string>

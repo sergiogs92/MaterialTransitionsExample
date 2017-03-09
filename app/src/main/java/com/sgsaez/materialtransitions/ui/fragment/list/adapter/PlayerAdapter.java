@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.sgsaez.materialtransitions.R;
@@ -52,7 +53,8 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.Holder> {
     @Override
     public void onBindViewHolder(Holder holder, int position) {
         holder.bind(mPlayerList.get(position), mListener);
-        ViewCompat.setTransitionName(holder.getIvPhoto(), String.valueOf(position) + "_photo");
+		ViewCompat.setTransitionName(holder.getItemContainer(), String.valueOf(position) + "_container");
+		ViewCompat.setTransitionName(holder.getIvPhoto(), String.valueOf(position) + "_photo");
         ViewCompat.setTransitionName(holder.getIvShield(), String.valueOf(position) + "_shield");
         ViewCompat.setTransitionName(holder.getTvName(), String.valueOf(position) + "_name");
     }
@@ -64,12 +66,14 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.Holder> {
 
     public static class Holder extends RecyclerView.ViewHolder {
 
+		private RelativeLayout itemContainer;
         private TextView tvName;
         private ImageView ivPhoto;
         private ImageView ivShield;
 
         public Holder(View itemView) {
             super(itemView);
+			itemContainer = (RelativeLayout) itemView.findViewById(R.id.player_item_container);
             tvName = (TextView) itemView.findViewById(R.id.player_item_component_title_text_view);
             ivPhoto = (ImageView) itemView.findViewById(R.id.player_item_component_photo_image_view);
             ivShield = (ImageView) itemView.findViewById(R.id.player_item_component_shield_image_view);
@@ -86,6 +90,10 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.Holder> {
         public TextView getTvName() {
             return tvName;
         }
+
+		public RelativeLayout getItemContainer() {
+			return itemContainer;
+		}
 
         public void bind(final Player player, final OnPlayerClickListener listener) {
 
